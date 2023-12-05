@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "UsingViewDataCalc - Lab11";
+}
+
+<h1 style="font-size:xx-large">PassUsingModel</h1>
+<p><b>Rand Value First : @ViewData["Value1"]</b></p>
+<p><b>Rand Value Second : @ViewData["Value2"]</b></p>
+<p><b>Add :</b></p>
+<p>@ViewData["Value1"] + @ViewData["Value2"] = @((int)ViewData["Value1"] + (int)ViewData["Value2"])</p>
+<p><b>Sub :</b></p>
+<p>@ViewData["Value1"] - @ViewData["Value2"] = @((int)ViewData["Value1"] - (int)ViewData["Value2"])</p>
+<p><b>Mult :</b></p>
+<p>@ViewData["Value1"] * @ViewData["Value2"] = @((int)ViewData["Value1"] * (int)ViewData["Value2"])</p>
+<p><b>Div :</b></p>
+<p>@ViewData["Value1"] / @ViewData["Value2"] = @((int)ViewData["Value2"] != 0 ? (int)ViewData["Value1"] / (int)ViewData["Value2"] : "error")</p>

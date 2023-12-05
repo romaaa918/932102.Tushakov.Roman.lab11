@@ -1,0 +1,19 @@
+﻿@inject Calc calc
+@{
+    ViewData["Title"] = "UsingServiceInjectionCalc - Lab11";
+    var value1 = calc.Value();
+    var value2 = calc.Value();
+}
+
+<h1 style="font-size:xx-large">PassUsingModel</h1>
+<p><b>Rand Value First : @value1</b></p>
+<p><b>Rand Value Second : @value2</b></p>
+<p><b>Add :</b></p>
+<p>@value1 + @value2 = @(value1 + value2)</p>
+<p><b>Sub :</b></p>
+<p>@value1 - @value2 = @(value1 - value2)</p>
+<p><b>Mult :</b></p>
+<p>@value1 * @value2 = @(value1 * value2)</p>
+<p><b>Div :</b></p>
+<p>@value1 / @value2 = @(value2 != 0 ? value1 / value2 : "error")</p>
+

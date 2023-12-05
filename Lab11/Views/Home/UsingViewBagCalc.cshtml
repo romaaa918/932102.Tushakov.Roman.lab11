@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "UsingViewBagCalc - Lab11";
+}
+
+<h1 style="font-size:xx-large">PassUsingModel</h1>
+<p><b>Rand Value First : @ViewBag.Value1</b></p>
+<p><b>Rand Value Second : @ViewBag.Value2</b></p>
+<p><b>Add :</b></p>
+<p>@ViewBag.Value1 + @ViewBag.Value2 = @(ViewBag.Value1 + ViewBag.Value2)</p>
+<p><b>Sub :</b></p>
+<p>@ViewBag.Value1 - @ViewBag.Value2 = @(ViewBag.Value1 + ViewBag.Value2)</p>
+<p><b>Mult :</b></p>
+<p>@ViewBag.Value1 * @ViewBag.Value2 = @(ViewBag.Value1 + ViewBag.Value2)</p>
+<p><b>Div :</b></p>
+<p>@ViewBag.Value1 / @ViewBag.Value2 = @(ViewBag.Value2 != 0 ? ViewBag.Value1 / ViewBag.Value2 : "error")</p>

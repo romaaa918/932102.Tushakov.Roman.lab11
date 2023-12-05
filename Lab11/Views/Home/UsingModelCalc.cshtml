@@ -1,0 +1,16 @@
+﻿@model CalcModel
+@{
+    ViewData["Title"] = "UsingModelCalc - Lab11";
+}
+
+<h1 style="font-size:xx-large">PassUsingModel</h1>
+<p><b>Rand Value First : @Model.value1</b></p>
+<p><b>Rand Value Second : @Model.value2</b></p>
+<p><b>Add :</b></p>
+<p>@Model.value1 + @Model.value2 = @(Model.value1 + Model.value2)</p>
+<p><b>Sub :</b></p>
+<p>@Model.value1 - @Model.value2 = @(Model.value1 - Model.value2)</p>
+<p><b>Mult :</b></p>
+<p>@Model.value1 * @Model.value2 = @(Model.value1 * Model.value2)</p>
+<p><b>Div :</b></p>
+<p>@Model.value1 / @Model.value2 = @(Model.value2 != 0 ? Model.value1 / Model.value2 : "error")</p>
